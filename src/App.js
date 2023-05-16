@@ -4,14 +4,18 @@ export default function App() {
   return (
     <>
     <header className="header">
+      <div className="background-image">
       <nav>
-          <div className="logo">
-            <img src="https://i.postimg.cc/BbWtDCkD/the-hicker-orange-black.png" alt="logo" ></img>
+          <div className="container">
+                <div className="logo">
+                <img src='https://i.postimg.cc/T33bVnpt/the-hicker-black.png' border='0' alt='the-hicker-black'/>
+                </div>                
+                <div className="title">
+                  <h1>When the mountains meets programming</h1>
+                </div>                
           </div>
-          <section className="pronoucement">
-   
-      </section>
-      </nav>
+        </nav>
+      </div>
       
     </header>
     <main>

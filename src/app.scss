@@ -1,32 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+$font-first: 'Crimson Text', serif;
+$font-second: 'Roboto', sans-serif;
+$font-third: 'Raleway', sans-serif;
 
 body{
     margin: 0;
-}
-
-header{
-    width:100%;
-    background: url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
-    min-height: 380px;
-
-}
-
-nav{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 58%, rgba(0,212,255,0) 100%);
-}
-
-.logo {
-    img{
-    object-fit: cover;
-    height: 100px;
-    width: 400px;
+    h1{
+        margin: 0;
     }
 }
 
-.pronoucement img{
-    margin: 0;
-    object-fit: cover;
-    width: 100%;
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.background-image{
+    width:100%;
+    background-image: url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    height: 100px;
+    background-color: white;
+    width:100%;
+}
+
+.logo {
+    height: 100px;
+    img{
+    height: 100px;
+    max-width: 450px;
+    }
+}
+
+.title {
+    h1{
+        font-family: $font-third;
+        font-size: 62px;
+    }
+}
+
+main{
+    height: 100vh;
 }
 

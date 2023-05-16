@@ -1,22 +1,31 @@
-import { useState } from "react";
+import './../src/app.scss'
 
-function App() {
-
-  const [count, setCount] = useState(0);
-
-  function handleClick(){
-    setCount(count + 1)
-  }
-
+export default function App() {
   return (
     <>
-      fdsfdsf
-      <button onClick={handleClick}>button</button>
-      {
-        console.log(count)
-      }
+    <header className="header">
+      <nav>
+          <div className="logo">
+            <img src="https://i.postimg.cc/BbWtDCkD/the-hicker-orange-black.png" alt="logo" ></img>
+          </div>
+          <section className="pronoucement">
+   
+      </section>
+      </nav>
+      
+    </header>
+    <main>
+      <section></section>
+      <article>
+
+      </article>
+      <section></section>
+    </main>
+    <footer>
+
+    </footer>
     </>
   );
+
 }
 
-export default App;

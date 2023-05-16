@@ -1,0 +1,32 @@
+
+
+body{
+    margin: 0;
+}
+
+header{
+    width:100%;
+    background: url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
+    min-height: 380px;
+
+}
+
+nav{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 58%, rgba(0,212,255,0) 100%);
+}
+
+.logo {
+    img{
+    object-fit: cover;
+    height: 100px;
+    width: 400px;
+    }
+}
+
+.pronoucement img{
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+}
+

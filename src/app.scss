@@ -4,6 +4,13 @@ $font-first: 'Crimson Text', serif;
 $font-second: 'Roboto', sans-serif;
 $font-third: 'Raleway', sans-serif;
 
+/*#FFBD59
+#000000
+beige
+*/
+
+
+
 body{
     margin: 0;
     h1{
@@ -14,9 +21,14 @@ body{
 .container{
     max-width: 1400px;
     margin: 0 auto;
+
 }
 
+
 .background-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:100%;
     background-image: url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
     background-size: cover;
@@ -29,22 +41,61 @@ nav{
     width:100%;
 }
 
+.navbar{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    h2{
+        padding: 0 20px;
+        font-family: $font-third;
+        font-weight: 500;
+    }
+}
+
 .logo {
     height: 100px;
     img{
+    box-sizing: border-box;
+    filter: blur(0.4px);
     height: 100px;
-    max-width: 450px;
+    max-width: 350px;
     }
 }
 
 .title {
+    border: 2px dashed #FFBD59;
+    background:rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
     h1{
+        padding: 10px;
         font-family: $font-third;
         font-size: 62px;
+        font-weight: 700;
+        text-align: center;
     }
 }
 
-main{
+.btn {
+    margin: 20px auto;
+    max-width: 100px;
+    background-color: #FFBD59;
+    padding: 30px;
+    font-size: 32px;
+    font-family: $font-third;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.about{
     height: 100vh;
 }
 

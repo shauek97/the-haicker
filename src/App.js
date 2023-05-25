@@ -1,6 +1,8 @@
 import './../src/app.scss'
+import { useState, useSyncExternalStore } from 'react';
 
 export default function App() {
+
   return (
     <>
     <header className="header">
@@ -33,9 +35,23 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className='about'>
-        
+      <section className='face-hint'>
+        <div className="container">
+          <div className="main-box">
+            <div className="description-box">
+              <h3>My name is Wojciech Szałkiewicz and I am simple guy from Poland, which wants to bring mountains and programming to one place.</h3>
+            </div>
+            <div className="image-box">
+            <img src='https://i.postimg.cc/CMZ2hcfM/cvphoto.png' border='0' alt='cvphoto'/>
+            </div>
+          </div>
+        </div>
+
       </section>
+      <section className="website-explain">
+
+      </section>
+
     </main>
     <footer>
 

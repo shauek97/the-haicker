@@ -21,7 +21,6 @@ body{
 .container{
     max-width: 1400px;
     margin: 0 auto;
-
 }
 
 
@@ -30,7 +29,8 @@ body{
     align-items: center;
     justify-content: center;
     width:100%;
-    background-image: url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
+    background:rgba(0, 0, 0, 0.55)url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
+    background-blend-mode: darken;
     background-size: cover;
     height: 100vh;
 }
@@ -39,6 +39,7 @@ nav{
     height: 100px;
     background-color: white;
     width:100%;
+    padding: 3px;
 }
 
 .navbar{
@@ -49,6 +50,8 @@ nav{
 }
 
 .menu{
+    box-sizing: border-box;
+    border: 2px dashed #FFBD59;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -60,8 +63,11 @@ nav{
 }
 
 .logo {
+    
     height: 100px;
     img{
+        box-sizing: border-box;
+    border: 2px dashed #FFBD59;
     box-sizing: border-box;
     filter: blur(0.4px);
     height: 100px;
@@ -71,15 +77,16 @@ nav{
 
 .title {
     border: 2px dashed #FFBD59;
-    background:rgba(255, 255, 255, 0.3);
+
     display: flex;
     flex-direction: column;
     h1{
         padding: 10px;
         font-family: $font-third;
         font-size: 62px;
-        font-weight: 700;
+        font-weight: 300;
         text-align: center;
+        color:white
     }
 }
 
@@ -95,7 +102,48 @@ nav{
 
 }
 
-.about{
-    height: 100vh;
+.face-hint{
+    padding: 100px;
+    background-color: #FFBD59;
 }
 
+.main-box{
+    margin: 0 auto;
+    display:flex;
+}
+
+.description-box{
+    display: flex;
+    align-items: center;
+  max-width: 1000px;
+  h3{
+    font-family: $font-first;
+    font-size: 32px;
+  }
+}
+
+.description{
+    font-family: $font-first;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.image-box{
+    -webkit-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
+    box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
+
+    border-radius: 50%;
+    height: 300px;
+    img{
+        object-fit: cover;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+
+.website-explain{
+    
+}

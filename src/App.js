@@ -49,9 +49,33 @@ export default function App() {
 
       </section>
       <section className="website-explain">
-
+        <div className="text-holder">
+          <p>
+            My main vision of this website is to create portfolio and blog, where I will write down every most important milestone of my programming and mountain hiking progress.
+          </p>
+        </div>
       </section>
-
+      <section className="skills">
+        <div className='container'> 
+          <div className="level-legend">
+          <h4>SKILLS</h4>
+            <div className="learning">
+              <div className='icon-first'></div>
+              <div className='text'>
+                <p>Learning in progress.</p>
+              </div>
+            </div>
+            <div className="almost-learned">
+              <div className='icon-second'></div>
+              <div className='text'><p>More than learning in progress.</p></div>
+            </div>
+            <div className="learned">
+              <div className='icon-second'></div>
+              <div className='text'><p>Well, it depends, but I can say I feel pretty sure in this case.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
 

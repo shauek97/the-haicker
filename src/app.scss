@@ -15,6 +15,7 @@ body{
     h1{
         margin: 0;
     }
+
 }
 
 .container{
@@ -58,11 +59,16 @@ nav{
         padding: 0 20px;
         font-family: $font-third;
         font-weight: 500;
+        transition: 0.2s;
+    }
+
+    h2:hover{
+        color: #FFBD59;
+        cursor: pointer;
     }
 }
 
 .logo {
-    
     height: 100px;
     img{
         box-sizing: border-box;
@@ -72,6 +78,10 @@ nav{
         height: 100px;
         max-width: 350px;
     }
+}
+
+.logo:hover{
+    cursor: pointer;
 }
 
 .title {
@@ -98,7 +108,12 @@ nav{
     font-family: $font-third;
     font-weight: 500;
     text-align: center;
+    transition: 0.2s;
+}
 
+.btn:hover{
+    scale: 1.05;
+    cursor: pointer;
 }
 
 .face-hint{
@@ -143,8 +158,8 @@ nav{
 }
 
 .text-holder{
-    border-top: 3px dashed #FFBD59;
-    border-bottom: 3px dashed #FFBD59;
+    border-top: 2px dashed #FFBD59;
+    border-bottom: 2px dashed #FFBD59;
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
@@ -156,23 +171,119 @@ nav{
 }
 
 .skills{
-    padding: 50px;
-    background-color: black;
+    padding: 150px 0;
+    background: black;
     color: white;
     text-align: center;
     h4{
+        padding-bottom: 10px;
+        margin:0;
         font-family: $font-third;
-        font-size: 38px;
+        font-size: 42px;
         font-weight: 400;
+    }
+    span{
+        color:#FFBD59;
     }
 }
 
+.skills-title{
+    margin: 0 auto;
+    max-width: 400px;
+    border-bottom: 2px dashed white;
+}
+
 .level-legend{
-    display: grid;
-    grid-template-rows:50%, 50%;
-    grid-template-columns: 33%, 33%, 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-first{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #FFBD59;
+}
+
+.icon-second{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #80ff59;
+}
+
+.icon-third{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #59fcff;
 }
 
 .text{
     text-align: center;
+    min-width: 450px;
+    p{
+        font-family: $font-first;
+        font-size: 20px;
+    }
+}
+
+.technologies{
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.technologie-box{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    min-width: 150px;
+    margin: 5px;
+    p{
+        font-family: $font-third;
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+
+.skill-icon{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+
+}
+
+.projects{
+    padding-bottom: 150px;
+    background: black;
+    color: white;
+    text-align: center;
+    h4{
+        padding-bottom: 10px;
+        margin:0;
+        font-family: $font-third;
+        font-size: 42px;
+        font-weight: 400;
+    }
+    span{
+        color:#FFBD59;
+    }
+}
+
+.projects-title{
+    margin: 0 auto;
+    max-width: 400px;
+    border-bottom: 2px dashed white;
 }

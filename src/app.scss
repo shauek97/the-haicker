@@ -253,6 +253,7 @@ nav{
     display: flex;
     justify-content: center;
     background-color: white;
+    border: 2px dashed #FFBD59;
     min-width: 150px;
     margin: 5px;
     p{
@@ -298,6 +299,7 @@ nav{
     margin: 40px auto;
     padding: 20px;
     background-color: #FFBD59;
+    border: 2px dashed white;
     transition: 0.2s;
     h5{
         font-family: $font-third;

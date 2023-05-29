@@ -1,5 +1,9 @@
 import './../src/app.scss'
-import { useState, useSyncExternalStore } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMountain } from '@fortawesome/free-solid-svg-icons'
+
+const mountainIcon = <FontAwesomeIcon icon={faMountain} />
 
 export default function App() {
 
@@ -142,8 +146,133 @@ export default function App() {
             <p>For more projects do step into my <div className="github">GitHub.</div></p>
             </div>
           </div>
-          
+        </div>
+      </section>
+      <section className='mountains'>
+        <div className='container'> 
+            <div className='mountains-title'>
+              <h4>MOUNTAINS <span>I've climbed</span></h4>
+            </div>
+            <div className='mountains-climbed'>
 
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Grossglockner 3798</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+
+              <div className='mountain'>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
+              </div> 
+            
+            </div>
         </div>
       </section>
     </main>

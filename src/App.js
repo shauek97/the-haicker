@@ -1,4 +1,5 @@
 import './../src/app.scss'
+import Header from './components/sections/Header/Header'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMountain } from '@fortawesome/free-solid-svg-icons'
@@ -9,25 +10,7 @@ export default function App() {
 
   return (
     <>
-    <header className="header">
-      
-      <nav>
-          <div className="container">
-            <div className='navbar'>
-                <div className="logo">
-                  <img src='https://i.postimg.cc/T33bVnpt/the-hicker-black.png' border='0' alt='the-hicker-black'/>
-                </div>                
-                <div className="menu">
-                  <h2>Home</h2>
-                  <h2>About</h2>
-                  <h2>Blog</h2>
-                  <h2>GitHub</h2>
-                  <h2>Contact</h2>
-                </div>
-            </div>   
-          </div>
-      </nav>
-    </header>
+    <Header />
     <main>
       <section>
         <div className="background-image">

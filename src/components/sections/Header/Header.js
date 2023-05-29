@@ -1,3 +1,4 @@
+import Container from '../../architecture/Container/Container';
 import styles from './Header.module.scss';
 
 export default function Header(){
@@ -5,7 +6,7 @@ export default function Header(){
     return(
     <header>
     <nav>
-        <div className={styles.container}>
+        <Container>
           <div className={styles.navbar}>
               <div className={styles.logo}>
                 <img src='https://i.postimg.cc/T33bVnpt/the-hicker-black.png' border='0' alt='the-hicker-black'/>
@@ -18,7 +19,7 @@ export default function Header(){
                 <h2>Contact</h2>
               </div>
           </div>   
-        </div>
+        </Container>
     </nav>
   </header>
   );

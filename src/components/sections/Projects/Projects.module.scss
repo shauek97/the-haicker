@@ -1,0 +1,72 @@
+@import '../../../styles/settings.scss';
+
+.projects{
+    padding-bottom: 150px;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    h4{
+        padding-bottom: 10px;
+        margin:0;
+        font-family: $font-second;
+        font-size: 42px;
+        font-weight: 400;
+    }
+    span{
+        color:#FFBD59;
+    }
+}
+
+.projectsTitle{
+    margin: 0 auto;
+    max-width: 400px;
+    border-bottom: 2px dashed white;
+}
+
+.project-box{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFBD59;
+    border: 2px dashed white;
+    transition: 0.2s;
+    h5{
+        font-family: $font-second;
+        font-size:32px;
+        color:#0d0d0d;
+        margin: 0;
+    }
+    p{
+        font-family: $font-second;
+        font-size:20px;
+        font-weight: 600;
+        color:#0d0d0d;
+        margin: 0;
+    }
+}
+
+.project-box:hover{
+    cursor: pointer;
+    scale: 1.03;
+}
+
+.ps{
+    p{
+        font-family: $font-second;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    
+    .github{
+        font-family: $font-second;
+        font-size: 28px;
+        font-weight: 300;
+            color:#FFBD59;
+            transition: 0.1s;
+    }
+    
+    .github:hover{
+        scale: 1.1;
+        cursor: pointer;
+    }
+}

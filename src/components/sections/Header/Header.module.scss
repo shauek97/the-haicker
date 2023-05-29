@@ -14,7 +14,8 @@
 
 .menu{
     box-sizing: border-box;
-    border: 2px dashed #FFBD59;
+    border-right: 2px dashed #FFBD59;
+    border-left: 2px dashed #FFBD59;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -22,7 +23,7 @@
         padding: 0 20px;
         font-family: $font-second;
         font-weight: 500;
-        transition: 0.2s;
+        transition: $transition;
         color: #0d0d0d;
     }
 
@@ -36,7 +37,8 @@
     height: 100px;
     img{
         box-sizing: border-box;
-        border: 2px dashed #FFBD59;
+        border-right: 2px dashed #FFBD59;
+        border-left: 2px dashed #FFBD59;
         box-sizing: border-box;
         filter: blur(0.4px);
         height: 100px;

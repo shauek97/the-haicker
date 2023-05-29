@@ -156,122 +156,59 @@ export default function App() {
             <div className='mountains-climbed'>
 
               <div className='mountain'>
+                <div className='icon'>
+                {mountainIcon}
+                </div>
                 <div className='mountain-title'>
                 <p>Grossglockner 3798</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
+                </div>  
               </div> 
 
               <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
                 <div className='icon'>
                 {mountainIcon}
                 </div>
+                <div className='mountain-title'>
+                <p>Rysy 2499</p>
+                </div>  
               </div> 
 
               <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
                 <div className='icon'>
                 {mountainIcon}
                 </div>
+                <div className='mountain-title'>
+                <p>Kozi Wierch 2291</p>
+                </div>  
               </div> 
 
               <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
                 <div className='icon'>
                 {mountainIcon}
                 </div>
+                <div className='mountain-title'>
+                <p>Szpiglasowy<br></br> Wierch 2172 </p>
+                </div>  
               </div> 
 
               <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
                 <div className='icon'>
                 {mountainIcon}
                 </div>
+                <div className='mountain-title'>
+                <p>Barania góra 1220</p>
+                </div>  
               </div> 
 
               <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
                 <div className='icon'>
                 {mountainIcon}
                 </div>
-              </div> 
-
-              <div className='mountain'>
                 <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
+                <p>Śnieżka 1603</p>
+                </div>  
               </div> 
-
-              <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
-              </div> 
-
-              <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
-              </div> 
-
-              <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
-              </div> 
-
-              <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
-              </div> 
-
-              <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
-              </div> 
-
-              <div className='mountain'>
-                <div className='mountain-title'>
-                <p>Rysy 2499</p>
-                </div>
-                <div className='icon'>
-                {mountainIcon}
-                </div>
-              </div> 
-            
+ 
             </div>
         </div>
       </section>

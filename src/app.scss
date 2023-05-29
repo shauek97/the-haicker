@@ -376,10 +376,17 @@ nav{
 }
 
 .mountain{
-    margin: 0 35px;
+    margin: 0 10px;
+    min-width: 180px;
 }
 
-.mountains-title
+.mountain-title{
+    font-family: $font-third;
+    font-weight: 500;
+    p{
+        margin: 2px;
+    }
+}
 
 .icon{
 

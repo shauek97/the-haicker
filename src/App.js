@@ -208,8 +208,12 @@ export default function App() {
                 <p>Śnieżka 1603</p>
                 </div>  
               </div> 
- 
             </div>
+        </div>
+      </section>
+      <section className='contact'>
+        <div className='contact-title'>
+        <h4>CONTACT <span>me</span></h4>
         </div>
       </section>
     </main>

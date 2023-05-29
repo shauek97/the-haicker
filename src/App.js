@@ -52,7 +52,7 @@ export default function App() {
         </div>
 
       </section>
-      <section className="website-explain">
+      <section className="introduction">
         <div className="text-holder">
           <p>
             My main vision of this website is to create programming portfolio and blog, where I will write down every most important milestone of my programming and mountain hiking progress.

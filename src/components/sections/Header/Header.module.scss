@@ -28,6 +28,10 @@
     }
 }
 
+.menuAndState{
+    display: flex;
+}
+
 .logo {
     height: 100px;
     img{
@@ -43,4 +47,20 @@
 
 .logo:hover{
     cursor: pointer;
+}
+
+.workState{
+    display: flex;
+    align-items: center;
+    color: $color-dark;
+    p{
+        margin: 0 $base-size *0.5;
+    }
+}
+
+.icon{
+    border-radius: 50%;
+    width: $base-size;
+    height: $base-size;
+    background-color: #FFBD59;
 }

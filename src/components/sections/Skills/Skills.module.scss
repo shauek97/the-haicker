@@ -64,6 +64,7 @@
         font-family: $font-second;
         font-size: 18px;
         font-weight: 400;
+        margin: $base-size*0.5 0;
     }
 }
 
@@ -80,10 +81,10 @@
     display: flex;
     justify-content: center;
     background-color: white;
-    border: 2px dashed #FFBD59;
     min-width: 150px;
     margin: 5px;
     p{
+        margin: $base-size 0;
         font-family: $font-second;
         font-weight: 600;
         font-size: $base-size;

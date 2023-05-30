@@ -49,6 +49,7 @@
     margin: 0 auto;
     text-align: center;
     p{
+        margin: $base-size*2 0;
         font-family: $font-first;
         font-size: $base-size*1.5;
         font-weight: 500;

@@ -11,7 +11,7 @@ const envelopeIcon = <FontAwesomeIcon icon={faEnvelope} />
 
 export default function Contact() {
     return(
-        <section className={styles.contactSection}>
+        <section id="contact" className={styles.contactSection}>
             <Container>
                 <div className={styles.contactTitle}>
                 <h4>CONTACT <span>me</span></h4>

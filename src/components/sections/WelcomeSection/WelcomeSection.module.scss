@@ -1,6 +1,8 @@
 @import '../../../styles/settings.scss';
 
 
+
+
 .backgroundImage{
     display: flex;
     align-items: center;
@@ -12,9 +14,8 @@
     height: 100vh;
 }
 
-.title {
+.title{
     border: 2px dashed #FFBD59;
-
     display: flex;
     flex-direction: column;
     h1{
@@ -27,7 +28,7 @@
     }
 }
 
-.btn {
+.btn{
     margin: $base-size auto;
     max-width: $base-size*8;
     background-color: $color-orange;
@@ -43,3 +44,21 @@
     scale: 1.05;
     cursor: pointer;
 }
+
+.window-replace-enter {
+    opacity: 0;
+  }
+  
+  .window-replace-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  
+  .window-replace-exit {
+    opacity: 1;
+  }
+  
+  .window-replace-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+  }

@@ -1,3 +1,6 @@
+@import './settings.scss';
+
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -5,4 +8,6 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: $font-second;
+    font-weight: 500;
 }

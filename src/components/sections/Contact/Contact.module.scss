@@ -1,6 +1,6 @@
 @import '../../../styles/settings.scss';
 
-.contact{
+.contactSection{
     padding: $base-size*4 0; 
     text-align: center;
 }
@@ -8,26 +8,115 @@
 .contactTitle{
     margin: 0 auto;
     max-width: 400px;
-    border-bottom: 2px dashed #0d0d0d;
+    border-bottom: 2px dashed $color-dark;
     h4{
         padding-bottom: 10px;
         margin:0;
         font-family: $font-second;
         font-size: 42px;
         font-weight: 500;
-        color: #0d0d0d;
+        color: $color-dark;
     }
     span{
-        color:#FFBD59;
+        color:$color-orange;
+    }
+}
+
+.contacts{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    p{
+        font-size: $base-size;
+        font-family: $font-second;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.contact{
+    margin: $base-size*2 $base-size;
+    
+    .icon{
+        scale:1.8;
+        color: $color-orange;
+    }
+
+    .text{
+        margin:$base-size 0;
+        
+        span{
+            font-weight: 700;
+        }
     }
 }
 
 .form{
     display: flex;
     flex-wrap: wrap;
-    margin: $base-size*2 auto;
-    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 400px;
+   
+ 
+
     input{
-        
+        margin: $base-size 0;
+        width: 100%;
+        height: $base-size*2;
+        border: 3px solid $color-orange;
+        transition: $transition;
+    }
+
+    input::placeholder{
+        color: $color-orange;
+        font-family: $font-second;
+        font-weight: 600;
+    }
+    
+    input:focus{
+        outline: none;
+        background-color: $color-light-orange;
+    };
+
+    textarea{
+        margin: $base-size 0;
+        width: 100%;
+        height: $base-size*2;
+        transition: $transition;
+        border: 3px solid $color-orange;
+    }
+    
+    textarea::placeholder{
+        color: $color-orange;
+        font-family: $font-second;
+        font-weight: 600;
+    }
+
+    textarea:focus{
+        height: $base-size*9;
+        outline: none;
+        background-color: $color-light-orange;
+    }
+
+    .button {
+        margin: $base-size auto;
+        max-width: $base-size*8;
+        background-color: #FFBD59;
+        padding: $base-size;
+        font-size: $base-size*1.5;
+        font-family: $font-second;
+        font-weight: 500;
+        text-align: center;
+        transition: $transition;
+        outline: none;
+        border: none;
+        color: white;
+    }
+    
+    .button:hover{
+        scale: 1.05;
+        cursor: pointer;
     }
 }
+

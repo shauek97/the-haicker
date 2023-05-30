@@ -1,15 +1,21 @@
 @import '../../../styles/settings.scss';
 
 .skills{
-    padding: 150px 0;
+    padding: $base-size*4 0;
     background: #0d0d0d;
     color: white;
     text-align: center;
+}
+
+.skillsTitle{
+    margin: 0 auto;
+    max-width: 400px;
+    border-bottom: 2px dashed white;
     h4{
-        padding-bottom: 10px;
+        padding-bottom: $base-size*0.5;
         margin:0;
         font-family: $font-second;
-        font-size: 42px;
+        font-size: $base-size*2;
         font-weight: 400;
     }
     span{
@@ -17,18 +23,12 @@
     }
 }
 
-.skillsTitle{
-    margin: 0 auto;
-    max-width: 400px;
-    border-bottom: 2px dashed white;
-}
-
 .levelLegend{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 50px 0;
+    padding: $base-size*2 0;
 }
 
 .icon{
@@ -38,22 +38,22 @@
 
 .iconFirst{
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: $base-size;
+    height: $base-size;
     background-color: #FFBD59;
 }
 
 .iconSecond{
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: $base-size;
+    height: $base-size;
     background-color: #80ff59;
 }
 
 .iconThird{
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: $base-size;
+    height: $base-size;
     background-color: #59fcff;
 }
 
@@ -86,7 +86,7 @@
     p{
         font-family: $font-second;
         font-weight: 600;
-        font-size: 22px;
+        font-size: $base-size;
     }
 }
 

@@ -2,7 +2,7 @@
 
 
 .faceHint{
-    padding: 100px;
+    padding: $base-size*4 0;
     background-color: #FFBD59;
 }
 
@@ -17,9 +17,9 @@
     max-width: 1000px;
     h3{
         font-family: $font-first;
-        font-size: 32px;
+        font-size: $base-size*1.5;
         color: #0d0d0d;
-  }
+    }
 }
 
 .imageBox{
@@ -38,7 +38,7 @@
 }
 
 .introduction{
-    padding: 150px;
+    padding: $base-size*8 0;
     background-color: white;
 }
 
@@ -50,7 +50,7 @@
     text-align: center;
     p{
         font-family: $font-first;
-        font-size: 32px;
+        font-size: $base-size*1.5;
         font-weight: 500;
         color: #0d0d0d;
     }

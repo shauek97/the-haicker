@@ -6,6 +6,9 @@ export default function App() {
         <section>
         <div className={styles.backgroundImage}>
           <Container>
+            <div className={styles.workState}>
+              
+            </div>
             <div className={styles.title}>
                 <h1>WHEN MOUNTAINS<br></br> MEETS PROGRAMMING</h1>
             </div>    

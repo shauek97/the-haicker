@@ -2,7 +2,6 @@
 
 .contactSection{
     padding: $base-size*4 0; 
-    text-align: center;
 }
 
 .contactTitle{
@@ -67,6 +66,12 @@
         border: 3px solid $color-orange;
         transition: $transition;
     }
+   
+    input:hover{
+        -webkit-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+    }
 
     input::placeholder{
         color: $color-orange;
@@ -77,6 +82,9 @@
     input:focus{
         outline: none;
         background-color: $color-light-orange;
+        -webkit-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
     };
 
     textarea{
@@ -85,6 +93,12 @@
         height: $base-size*2;
         transition: $transition;
         border: 3px solid $color-orange;
+    }
+
+    textarea:hover{
+        -webkit-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
     }
     
     textarea::placeholder{
@@ -97,6 +111,9 @@
         height: $base-size*9;
         outline: none;
         background-color: $color-light-orange;
+        -webkit-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
+        box-shadow: 1px 9px 24px -9px rgba(66, 68, 90, 1);
     }
 
     .button {

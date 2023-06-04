@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <Container>
                 <div className={styles.copyright}>
-                    <h5>Copyright © Wojciech Szałkiewicz 2023</h5>
+                    <h5>Copyright © Wojciech Szałkiewicz 2023. All rights reserved.</h5>
                 </div>
             </Container>
         </footer>

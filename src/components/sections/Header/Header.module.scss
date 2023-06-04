@@ -28,9 +28,7 @@
     }
 }
 
-.menuAndState{
-    display: flex;
-}
+
 
 .logo {
     height: 100px;
@@ -63,4 +61,15 @@
     width: $base-size;
     height: $base-size;
     background-color: #FFBD59;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+@media (max-width: 990px){
+    .mobileMenu{
+        display: flex;
+        color: red;
+    }
 }

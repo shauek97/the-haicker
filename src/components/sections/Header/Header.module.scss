@@ -28,8 +28,6 @@
     }
 }
 
-
-
 .logo {
     height: 100px;
     img{
@@ -67,9 +65,25 @@
     display: none;
 }
 
+.hamburger{
+    display: none;
+}
+
 @media (max-width: 990px){
+    .menu{
+        display: none;
+    }
+    
     .mobileMenu{
-        display: flex;
         color: red;
+        display: none;
+        
+    }
+
+    .hamburgerBox{
+        display: flex;
+        color: $color-orange;
+        position: absolute;
+        right: 5%;
     }
 }

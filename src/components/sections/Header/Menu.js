@@ -1,7 +1,10 @@
 import NavLinks from "./NavLinks";
+import styles from "./Header.module.scss";
 
-export default function Menu({ getToContact, getToAbout }) {
+export default function Menu() {
   return (
-    <NavLinks />
+    <div className={styles.menu}>
+      <NavLinks/>
+    </div>
   );
 }

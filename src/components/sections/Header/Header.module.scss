@@ -5,6 +5,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    height: 100px;
+    background-color: $color-light;    
 }
 
 .menu{
@@ -29,7 +31,7 @@
 }
 
 .logo {
-    height: 100px;
+    height: 50px;
     img{
         box-sizing: border-box;
         border-right: 2px dashed #FFBD59;
@@ -61,15 +63,15 @@
     background-color: #FFBD59;
 }
 
-.mobileMenu{
-    display: none;
-}
-
-.hamburger{
+.mobileSet{
     display: none;
 }
 
 @media (max-width: 990px){
+    .mobileSet{
+        display:flex;
+    }
+
     .menu{
         display: none;
     }
@@ -77,13 +79,19 @@
     .mobileMenu{
         color: red;
         display: none;
-        
+        align-items: center;
+    }
+
+    .hamburger{
+        display: flex;
+        scale: 3;
     }
 
     .hamburgerBox{
-        display: flex;
         color: $color-orange;
+        align-items: center;
         position: absolute;
         right: 5%;
+        top: 4%;
     }
 }

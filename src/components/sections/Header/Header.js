@@ -5,20 +5,6 @@ import styles from "./Header.module.scss";
 
 export default function Header() {
 
-  const getToAbout = () => {
-    const element = document.getElementById('introduction');
-    if (element) {
-      element.scrollIntoView({behavior: 'smooth'});
-    }
-  }
-
-  const getToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
   return (
     <header>
       <nav>
@@ -31,8 +17,8 @@ export default function Header() {
                 alt="the-hicker-black"
               />
             </div>
-            <Menu getToContact={getToContact} getToAbout={getToAbout}/>
-            <MobileMenu getToContact={getToContact} getToAbout={getToAbout}/>
+            <Menu/>
+            <MobileMenu/>
           </div>
         </Container>
       </nav>

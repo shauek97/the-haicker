@@ -1,123 +1,125 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
-.backgroundImage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    background:rgba(0, 0, 0, 0.55)url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
-    background-blend-mode: darken;
-    background-size: cover;
-    height: 100vh;
+.backgroundImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55)
+    url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  height: 100vh;
 }
 
-.title{
-    max-width: 800px;
-    margin: 0 auto;
-    border: 2px dashed #FFBD59;
-    display: flex;
-    flex-direction: column;
-    h1{
-        padding: $base-size;
-        font-family: $font-second;
-        font-size: $base-size*3;
-        font-weight: 300;
-        text-align: center;
-        color:white;
-    }
-}
-
-.btn{
-    margin: $base-size auto;
-    max-width: $base-size*8;
-    background-color: $color-orange;
+.title {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px dashed #ffbd59;
+  display: flex;
+  flex-direction: column;
+  h1 {
     padding: $base-size;
-    font-size: $base-size*1.5;
     font-family: $font-second;
-    font-weight: 500;
+    font-size: $base-size * 3;
+    font-weight: 300;
     text-align: center;
-    transition: $transition;
+    color: white;
+  }
 }
 
-.btn:hover{
-    scale: 1.05;
-    cursor: pointer;
+.btn {
+  margin: $base-size auto;
+  max-width: $base-size * 8;
+  background-color: $color-orange;
+  padding: $base-size;
+  font-size: $base-size * 1.5;
+  font-family: $font-second;
+  font-weight: 500;
+  text-align: center;
+  transition: $transition;
+}
+
+.btn:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 .window-replace-enter {
-    opacity: 0;
-  }
-  
-  .window-replace-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
-  }
-  
-  .window-replace-exit {
-    opacity: 1;
-  }
-  
-  .window-replace-exit-active {
-    opacity: 0;
-    transition: opacity 300ms ease-out;
+  opacity: 0;
+}
+
+.window-replace-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.window-replace-exit {
+  opacity: 1;
+}
+
+.window-replace-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+@media (max-width: 992px) {
+  .backgroundImage {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55)
+      url(https://i.postimg.cc/PJ5G8WPq/main-photo-smaller.png);
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100vh;
   }
 
-  @media (max-width: 992px){
-    .backgroundImage{
-      width:100%;
-      background:rgba(0, 0, 0, 0.55)url(https://i.postimg.cc/PJ5G8WPq/main-photo-smaller.png);
-      background-blend-mode: darken;
-      background-size: cover;
-      height: 100vh;
-  }
-
-  .title{
+  .title {
     max-width: 600px;
     border: 2px dashed $color-orange;
-    h1{
-        border: none;
-        padding: $base-size;
-        font-family: $font-second;
-        font-size: $base-size*2;
-        font-weight: 300;
-        text-align: center;
-        color:white;
+    h1 {
+      border: none;
+      padding: $base-size;
+      font-family: $font-second;
+      font-size: $base-size * 2;
+      font-weight: 300;
+      text-align: center;
+      color: white;
     }
   }
 }
 
-@media (max-width: 768px){
-  .backgroundImage{
-    width:100%;
-    background:rgba(0, 0, 0, 0.55)url(https://i.postimg.cc/PrqKvtQK/main-photo-smallest-2.png);
+@media (max-width: 768px) {
+  .backgroundImage {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55)
+      url(https://i.postimg.cc/PrqKvtQK/main-photo-smallest-2.png);
     background-blend-mode: darken;
     background-size: cover;
     height: 70vh;
   }
 
-  .title{
+  .title {
     border: none;
-    h1{
-        border: none;
-        padding: $base-size;
-        font-family: $font-second;
-        font-size: $base-size*1.5;
-        font-weight: 300;
-        text-align: center;
-        color:white;
+    h1 {
+      border: none;
+      padding: $base-size;
+      font-family: $font-second;
+      font-size: $base-size * 1.5;
+      font-weight: 300;
+      text-align: center;
+      color: white;
     }
   }
 
-  .btn{
+  .btn {
     margin: $base-size auto;
-    max-width: $base-size*8;
+    max-width: $base-size * 8;
     background-color: $color-orange;
     padding: $base-size;
-    font-size: $base-size*1.5;
+    font-size: $base-size * 1.5;
     font-family: $font-second;
     font-weight: 500;
     text-align: center;
     transition: $transition;
   }
 }
-

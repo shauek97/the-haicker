@@ -1,13 +1,12 @@
 import styles from './Projects.module.scss'
+import Title from '../../features/Title/Title'
 import Container from '../../architecture/Container/Container'
 
 export default function Projects() {
     return(
         <section className={styles.projects}>
         <Container>
-          <div className={styles.projectsTitle}>
-            <h4><span>my </span>PROJECTS</h4>
-          </div>
+        <Title adding={'my '} title={'PROJECTS'}/>
           <div className={styles.projectList}>
             <div className={styles.projectBox}>
               <div className={styles.projectTitle}><h5>Waiter App</h5></div>

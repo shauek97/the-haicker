@@ -15,7 +15,7 @@
 .title {
   max-width: 800px;
   margin: 0 auto;
-  border: 2px dashed #ffbd59;
+  border: 2px dashed $color-orange;
   display: flex;
   flex-direction: column;
   h1 {
@@ -24,7 +24,7 @@
     font-size: $base-size * 3;
     font-weight: 300;
     text-align: center;
-    color: white;
+    color: $color-light;
   }
 }
 
@@ -83,7 +83,7 @@
       font-size: $base-size * 2;
       font-weight: 300;
       text-align: center;
-      color: white;
+      color: $color-light;
     }
   }
 }
@@ -104,10 +104,10 @@
       border: none;
       padding: $base-size;
       font-family: $font-second;
-      font-size: $base-size * 1.5;
+      font-size: $base-size *1.7;
       font-weight: 300;
       text-align: center;
-      color: white;
+      color: $color-light;
     }
   }
 

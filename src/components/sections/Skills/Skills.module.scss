@@ -2,15 +2,15 @@
 
 .skills{
     padding: $base-size*4 0;
-    background: #0d0d0d;
-    color: white;
+    background: $color-dark;
+    color: $color-light;
     text-align: center;
 }
 
 .skillsTitle{
     margin: 0 auto;
     max-width: 400px;
-    border-bottom: 2px dashed white;
+    border-bottom: 2px dashed $color-light;
     h4{
         padding-bottom: $base-size*0.5;
         margin:0;
@@ -70,7 +70,7 @@
 
 .technologies{
     margin: 0 auto;
-    color: #0d0d0d;
+    color: $color-dark;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,7 +80,7 @@
 .technologieBox{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: $color-light;
     min-width: 150px;
     margin: 5px;
     p{
@@ -96,4 +96,20 @@
     margin: 5px;
     align-items: center;
 
+}
+
+@media (max-width: 768px){
+    .text{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+            font-family: $font-second;
+            font-size: 18px;
+            font-weight: 400;
+            margin: $base-size*0.5 0;
+            max-width: 300px;
+        }
+    }
 }

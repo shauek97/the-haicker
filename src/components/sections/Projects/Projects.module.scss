@@ -2,25 +2,9 @@
 
 .projects{
     padding-bottom: $base-size*4;
-    background: #0d0d0d;
-    color: white;
+    background: $color-dark;
+    color: $color-light;
     text-align: center;
-    h4{
-        padding-bottom: 10px;
-        margin:0;
-        font-family: $font-second;
-        font-size: 42px;
-        font-weight: 400;
-    }
-    span{
-        color:#FFBD59;
-    }
-}
-
-.projectsTitle{
-    margin: 0 auto;
-    max-width: 400px;
-    border-bottom: 2px dashed $color-light;
 }
 
 .projectBox{
@@ -32,14 +16,14 @@
     h5{
         font-family: $font-second;
         font-size:32px;
-        color:#0d0d0d;
+        color:$color-dark;
         margin: 0;
     }
     p{
         font-family: $font-second;
         font-size:20px;
         font-weight: 600;
-        color:#0d0d0d;
+        color:$color-dark;
         margin: 0;
     }
 }
@@ -68,4 +52,40 @@
         scale: 1.1;
         cursor: pointer;
     }
+}
+
+@media (max-width: 768px){
+   .projectBox{
+    max-width: 500px;
+
+    h5{
+        font-family: $font-second;
+        font-size: $base-size * 1.2;
+        color: $color-dark;
+        margin: 0;
+    }
+    p{
+        font-family: $font-second;
+        font-size: $base-size* 0.8;
+        font-weight: 600;
+        color:$color-dark;
+        margin: 0;
+    }
+   }
+
+   .ps{
+    p{
+        font-family: $font-second;
+        font-size: $base-size * 0.8;
+        font-weight: 300;
+    }
+    
+    .github{
+        font-family: $font-second;
+        font-size: $base-size;
+        font-weight: 300;
+            color:$color-orange;
+            transition: 0.1s;
+    }
+   }
 }

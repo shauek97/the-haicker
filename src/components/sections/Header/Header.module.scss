@@ -1,5 +1,7 @@
 @import "../../../styles/settings.scss";
 
+
+
 .navbar {
   max-width: 1400px;
   margin: 0 auto;
@@ -70,6 +72,7 @@
 .mobileSetting {
   display: none;
 }
+
 @media (max-width: 990px) {
   .navbar {
     justify-content: start;
@@ -86,7 +89,6 @@
     top: 100px;
     right: 0;
     width: 100%;
-    background-color: $color-light;
 
     h2 {
       padding: $base-size 0;
@@ -95,6 +97,7 @@
       transition: $transition;
       color: $color-dark;
       border-bottom: 1px solid $color-orange;
+      background-color: $color-light;
     }
 
     h2:hover {

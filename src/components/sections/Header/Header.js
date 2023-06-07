@@ -4,7 +4,6 @@ import MobileMenu from "./MobileMenu";
 import styles from "./Header.module.scss";
 
 export default function Header() {
-
   return (
     <header>
       <nav>
@@ -17,8 +16,8 @@ export default function Header() {
                 alt="the-hicker-black"
               />
             </div>
-            <Menu/>
-            <MobileMenu/>
+            <Menu />
+            <MobileMenu />
           </div>
         </Container>
       </nav>

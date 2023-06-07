@@ -9,12 +9,13 @@ const barsIcon = <FontAwesomeIcon icon={faBars} />;
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
 
-  console.log(open)
+  const closeMobileMenu = () => setOpen(false);
+
   return (
     <>
       <div className={styles.mobileSetting}>
         <div className={styles.mobileMenu}>
-          {open && <NavLinks/>}
+          {open && <NavLinks closeMobileMenu={closeMobileMenu}/>}
         </div>
         <div className={styles.hamburgerBox}>
           <div className={styles.hamburger} onClick={() => setOpen(!open)}>

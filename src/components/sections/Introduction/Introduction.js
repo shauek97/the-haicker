@@ -7,7 +7,7 @@ export default function Header() {
       <section id="introduction" className={styles.faceHint}>
         <Container>
           <div className={styles.mainBox}>
-          <div className={styles.imageBox}>
+            <div className={styles.imageBox}>
               <img
                 src="https://i.postimg.cc/CMZ2hcfM/cvphoto.png"
                 border="0"

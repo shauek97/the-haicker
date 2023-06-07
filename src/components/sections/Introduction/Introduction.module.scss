@@ -1,122 +1,117 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
+.faceHint {
+  padding: $base-size * 4 0;
+  background-color: $color-orange;
+}
 
-.faceHint{
-    padding: $base-size*4 0;
+.mainBox {
+  margin: 0 auto;
+  display: flex;
+}
+
+.descriptionBox {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  p {
+    font-family: $font-first;
+    font-size: $base-size * 1.5;
+    color: $color-dark;
+    font-weight: 600;
+  }
+}
+
+.imageBox {
+  -webkit-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
+  box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
+  border-radius: 50%;
+  height: 300px;
+  margin: 0 $base-size * 2;
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.introduction {
+  padding: $base-size * 8 0;
+  background-color: $color-light;
+}
+
+.textHolder {
+  border-top: 2px dashed $color-orange;
+  border-bottom: 2px dashed $color-orange;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  p {
+    margin: $base-size * 2 0;
+    font-family: $font-first;
+    font-size: $base-size * 1.5;
+    font-weight: 500;
+    color: $color-dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBox {
+    padding: $base-size * 0;
     background-color: $color-orange;
-}
-
-.mainBox{
-    margin: 0 auto;
-    display:flex;
-}
-
-.descriptionBox{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 1000px;
-    p{
-        font-family: $font-first;
-        font-size: $base-size*1.5;
-        color: $color-dark;
-        font-weight: 600;
-    }
-}
+  }
 
-.imageBox{
+  .imageBox {
     -webkit-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
     -moz-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
     box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
     border-radius: 50%;
-    height: 300px;
-    img{
-        object-fit: cover;
-        border-radius: 50%;
-        height: 300px;
-        width: 300px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
     }
-    
-}
+  }
 
-.introduction{
-    padding: $base-size*8 0;
+  .descriptionBox {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    p {
+      font-family: $font-first;
+      font-size: $base-size * 1.2;
+      color: $color-dark;
+      font-weight: 600;
+    }
+  }
+
+  .introduction {
+    padding: $base-size * 4 0;
     background-color: $color-light;
-}
+  }
 
-.textHolder{
+  .textHolder {
     border-top: 2px dashed $color-orange;
     border-bottom: 2px dashed $color-orange;
-    max-width: 1100px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: center;
-    p{
-        margin: $base-size*2 0;
-        font-family: $font-first;
-        font-size: $base-size*1.5;
-        font-weight: 500;
-        color: $color-dark;
+    p {
+      margin: $base-size * 2 0;
+      font-family: $font-first;
+      font-size: $base-size * 1.2;
+      font-weight: 500;
+      color: $color-dark;
     }
+  }
 }
-
-@media (max-width: 768px){
-    .mainBox{
-        padding: $base-size* 0;
-        background-color: $color-orange;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageBox{
-        -webkit-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
-        -moz-box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
-        box-shadow: 23px 23px 14px -3px rgba(0, 0, 0, 0.47);
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        margin-bottom:30px;
-        img{
-            object-fit: cover;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-        }
-        
-    }
-
-    .descriptionBox{
-        display: flex;
-        align-items: center;
-        max-width: 1000px;
-        p{
-            font-family: $font-first;
-            font-size: $base-size *1.2;
-            color: $color-dark;
-            font-weight: 600;
-        }
-    }
-
-    .introduction{
-        padding: $base-size*4 0;
-        background-color: $color-light;
-    }
-
-    .textHolder{
-        border-top: 2px dashed $color-orange;
-        border-bottom: 2px dashed $color-orange;
-        max-width: 400px;
-        margin: 0 auto;
-        text-align: center;
-        p{
-            margin: $base-size*2 0;
-            font-family: $font-first;
-            font-size: $base-size*1.2;
-            font-weight: 500;
-            color: $color-dark;
-        }
-    }
-}
-
-
-    

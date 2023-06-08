@@ -1,19 +1,37 @@
 import styles from "./Introduction.module.scss";
 import Container from "../../architecture/Container/Container";
+import { motion } from "framer-motion";
+import { isVisible } from "@testing-library/user-event/dist/utils";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Header() {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true });
+
+  const animateFrom = {opacity: 0, scale: 0.5}
+  const animateTo = {opacity: 1, scale: 1}
+
   return (
     <>
       <section id="introduction" className={styles.faceHint}>
         <Container>
           <div className={styles.mainBox}>
-            <div className={styles.imageBox}>
+            <AnimatePresence>
+              {isVisible && (
+            <motion.div
+                    initial={animateFrom}
+                    animate={animateTo}
+            className={styles.imageBox}>
               <img
                 src="https://i.postimg.cc/CMZ2hcfM/cvphoto.png"
                 border="0"
                 alt="cvphoto"
               />
-            </div>
+            </motion.div>
+            )}
+            </AnimatePresence>
             <div className={styles.descriptionBox}>
               <p>
                 My name is Wojciech Szałkiewicz and I am simple guy from Poland,

@@ -18,6 +18,7 @@
   border: 2px dashed $color-orange;
   display: flex;
   flex-direction: column;
+  transition: $transition;
   h1 {
     padding: $base-size;
     font-family: $font-second;

@@ -1,6 +1,6 @@
 import styles from "./WelcomeSection.module.scss";
 import Container from "../../architecture/Container/Container";
-import { CSSTransition } from "react-transition-group";
+import { delay, motion } from "framer-motion";
 import { useState } from "react";
 
 export default function App() {
@@ -11,18 +11,29 @@ export default function App() {
     }
   };
 
+    const animateFrom = {opacity:0,}
+      const animateTo = {opacity:1,}
+
   return (
     <section>
       <div className={styles.backgroundImage}>
         <Container>
-          <div className={styles.title}>
+          <motion.div
+          initial={animateFrom}
+          animate={animateTo}
+          transition={{delay: 0.1}}
+          className={styles.title}>
             <h1>
               WHEN MOUNTAINS<br></br> MEETS PROGRAMMING
             </h1>
-          </div>
-          <div className={styles.btn} onClick={handleClickScroll}>
+          </motion.div>
+          <motion.div
+          initial={animateFrom}
+          animate={animateTo}
+          transition={{delay: 0.1}}
+          className={styles.btn} onClick={handleClickScroll}>
             About
-          </div>
+          </motion.div>
         </Container>
       </div>
     </section>

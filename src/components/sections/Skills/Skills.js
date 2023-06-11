@@ -1,8 +1,67 @@
 import styles from './Skills.module.scss';
 import Container from '../../architecture/Container/Container';
 import Title from '../../features/Title/Title';
+import { useState } from 'react';
 
 export default function Skills() {
+
+    const [skills, setSkills] = useState([
+      {
+        id:1,
+        title:'HTML',
+        level:'learned',
+      },
+
+      {
+        id:2,
+        title:'CSS',
+        level:'learned',
+      },
+
+      {
+        id:3,
+        title:'Sass',
+        level:'learned',
+      },
+
+      {
+        id:4,
+        title:'RWD',
+        level:'learned',
+      },
+
+      {
+        id:5,
+        title:'Bootstrap',
+        level:'learned',
+      },
+
+      {
+        id:6,
+        title:'Javascript',
+        level:'learning',
+      },
+
+      {
+        id:7,
+        title:'React',
+        level:'learning',
+      },
+
+      {
+        id:8,
+        title:'Redux',
+        level:'learning',
+      },
+
+      {
+        id:9,
+        title:'API',
+        level:'learning',
+      }
+
+    ])
+
     return(
         <section className={styles.skills}>
         <Container>
@@ -19,6 +78,12 @@ export default function Skills() {
             </div>
 
             <div className={styles.technologies}>
+
+              <div className={styles.technologieBox}>
+                <div className={styles.skillIcon}><div className={styles.iconThird}></div></div>
+                <div className={styles.skillText}><p>{skills.map.title}</p></div> 
+              </div>
+
               <div className={styles.technologieBox}>
                 <div className={styles.skillIcon}><div className={styles.iconThird}></div></div>
                 <div className={styles.skillText}><p>HTML</p></div> 

@@ -21,7 +21,7 @@ export default function App() {
           <motion.div
           initial={animateFrom}
           animate={animateTo}
-          transition={{delay: 0.1}}
+          transition={{delay: 0.2}}
           className={styles.title}>
             <h1>
               WHEN MOUNTAINS<br></br> MEETS PROGRAMMING

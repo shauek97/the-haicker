@@ -1,0 +1,27 @@
+@import "../../../styles/settings.scss";
+
+.projectBox {
+  max-width: 800px;
+  margin: $base-size * 2 auto;
+  padding: 20px;
+  background-color: $color-orange;
+  transition: 0.2s;
+  h5 {
+    font-family: $font-second;
+    font-size: 32px;
+    color: $color-dark;
+    margin: 0;
+  }
+  p {
+    font-family: $font-second;
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-dark;
+    margin: 0;
+  }
+}
+
+.projectBox:hover {
+  cursor: pointer;
+  scale: 1.03;
+}

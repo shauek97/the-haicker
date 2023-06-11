@@ -1,0 +1,47 @@
+@import '../../../styles/settings.scss';
+
+.technologieBox{
+    display: flex;
+    justify-content: center;
+    background-color: $color-light;
+    min-width: 150px;
+    margin: 5px;
+    p{
+        margin: $base-size 0;
+        font-family: $font-second;
+        font-weight: 600;
+        font-size: $base-size;
+    }
+}
+
+.skillIcon{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+
+}
+
+.iconFirst{
+    border-radius: 50%;
+    width: $base-size;
+    height: $base-size;
+    background-color: #FFBD59;
+}
+
+.iconThird{
+    border-radius: 50%;
+    width: $base-size;
+    height: $base-size;
+    background-color: #59fcff;
+}
+
+.text{
+    text-align: center;
+    min-width: 450px;
+    p{
+        font-family: $font-second;
+        font-size: 18px;
+        font-weight: 400;
+        margin: $base-size*0.5 0;
+    }
+}

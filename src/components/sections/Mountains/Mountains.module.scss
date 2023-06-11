@@ -1,73 +1,70 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
-.mountains{
-    padding: $base-size*4 0;
-    background: #FFBD59;
+.mountains {
+  padding: $base-size * 4 0;
+  background: #ffbd59;
+  color: white;
+  text-align: center;
+}
+
+.mountainsTitle {
+  margin: 0 auto;
+  max-width: 400px;
+  border-bottom: 2px dashed white;
+  h4 {
+    padding-bottom: $base-size * 0.5;
+    margin: 0;
+    font-family: $font-second;
+    font-size: $base-size * 2;
+    font-weight: 500;
+  }
+  span {
+    color: #0d0d0d;
+    font-size: $base-size * 0.8;
+  }
+}
+
+.mountainsClimbed {
+  margin: $base-size * 2 auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #0d0d0d;
+}
+
+.mountain {
+  margin: 0 10px;
+  min-width: 180px;
+}
+
+.mountainTitle {
+  font-family: $font-second;
+  font-weight: 600;
+  p {
+    margin: 6px;
+  }
+}
+
+.icon {
+  scale: 1.5;
+}
+
+@media (max-width: 768px) {
+  .mountains {
+    padding: $base-size * 3 0;
+    background: #ffbd59;
     color: white;
     text-align: center;
-}
+  }
 
-.mountainsTitle{
-    margin: 0 auto;
-    max-width: 400px;
-    border-bottom: 2px dashed white;
-    h4{
-        padding-bottom: $base-size*0.5;
-        margin:0;
-        font-family: $font-second;
-        font-size: $base-size*2;
-        font-weight: 500;
+  .mountainsTitle {
+    h4 {
+      font-size: $base-size * 1.5;
     }
-    span{
-        color:#0d0d0d;
-        font-size: $base-size*0.8;
+    span {
+      color: #0d0d0d;
+      font-size: $base-size * 0.8;
     }
-}
-
-.mountainsClimbed{
-    margin: $base-size*2 auto;
-    max-width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color:#0d0d0d;
-}
-
-.mountain{
-    margin: 0 10px;
-    min-width: 180px;
-}
-
-.mountainTitle{
-    font-family: $font-second;
-    font-weight: 600;
-    p{
-        margin: 6px;
-    }
-}
-
-.icon{
-scale: 1.5;
-}
-
-@media (max-width: 768px){
-
-    .mountains{
-        padding: $base-size*3 0;
-        background: #FFBD59;
-        color: white;
-        text-align: center;
-    }
-
-    .mountainsTitle{
-        h4{
-
-            font-size: $base-size*1.5;
-
-        }
-        span{
-            color:#0d0d0d;
-            font-size: $base-size*0.8;
-        }
-    }
+  }
 }

@@ -1,115 +1,87 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
-.skills{
-    padding: $base-size*4 0;
-    background: $color-dark;
-    color: $color-light;
+.skills {
+  padding: $base-size * 4 0;
+  background: $color-dark;
+  color: $color-light;
+  text-align: center;
+}
+
+.skillsTitle {
+  margin: 0 auto;
+  max-width: 400px;
+  border-bottom: 2px dashed $color-light;
+  h4 {
+    padding-bottom: $base-size * 0.5;
+    margin: 0;
+    font-family: $font-second;
+    font-size: $base-size * 2;
+    font-weight: 400;
+  }
+  span {
+    color: #ffbd59;
+  }
+}
+
+.levelLegend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: $base-size * 2 0;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.iconFirst {
+  border-radius: 50%;
+  width: $base-size;
+  height: $base-size;
+  background-color: #ffbd59;
+}
+
+.iconThird {
+  border-radius: 50%;
+  width: $base-size;
+  height: $base-size;
+  background-color: #59fcff;
+}
+
+.text {
+  text-align: center;
+  min-width: 450px;
+  p {
+    font-family: $font-second;
+    font-size: 18px;
+    font-weight: 400;
+    margin: $base-size * 0.5 0;
+  }
+}
+
+.technologies {
+  margin: 0 auto;
+  color: $color-dark;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .text {
     text-align: center;
-}
-
-.skillsTitle{
-    margin: 0 auto;
-    max-width: 400px;
-    border-bottom: 2px dashed $color-light;
-    h4{
-        padding-bottom: $base-size*0.5;
-        margin:0;
-        font-family: $font-second;
-        font-size: $base-size*2;
-        font-weight: 400;
-    }
-    span{
-        color:#FFBD59;
-    }
-}
-
-.levelLegend{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: $base-size*2 0;
-}
-
-.icon{
     display: flex;
     justify-content: center;
-}
-
-.iconFirst{
-    border-radius: 50%;
-    width: $base-size;
-    height: $base-size;
-    background-color: #FFBD59;
-}
-
-.iconSecond{
-    border-radius: 50%;
-    width: $base-size;
-    height: $base-size;
-    background-color: #80ff59;
-}
-
-.iconThird{
-    border-radius: 50%;
-    width: $base-size;
-    height: $base-size;
-    background-color: #59fcff;
-}
-
-.text{
-    text-align: center;
-    min-width: 450px;
-    p{
-        font-family: $font-second;
-        font-size: 18px;
-        font-weight: 400;
-        margin: $base-size*0.5 0;
+    p {
+      text-align: center;
+      font-family: $font-second;
+      font-size: 18px;
+      font-weight: 400;
+      margin: $base-size * 0.5 0;
+      max-width: 300px;
     }
-}
-
-.technologies{
-    margin: 0 auto;
-    color: $color-dark;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
-}
-
-.technologieBox{
-    display: flex;
-    justify-content: center;
-    background-color: $color-light;
-    min-width: 150px;
-    margin: 5px;
-    p{
-        margin: $base-size 0;
-        font-family: $font-second;
-        font-weight: 600;
-        font-size: $base-size;
-    }
-}
-
-.skillIcon{
-    display: flex;
-    margin: 5px;
-    align-items: center;
-
-}
-
-@media (max-width: 768px){
-    .text{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        p{
-            text-align: center;
-            font-family: $font-second;
-            font-size: 18px;
-            font-weight: 400;
-            margin: $base-size*0.5 0;
-            max-width: 300px;
-        }
-    }
+  }
 }

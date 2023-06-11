@@ -1,0 +1,18 @@
+@import "../../../styles/settings.scss";
+
+.mountain {
+  margin: $base-size * 0.6;
+  min-width: 180px;
+}
+
+.mountainTitle {
+  font-family: $font-second;
+  font-weight: 600;
+  p {
+    margin: 6px;
+  }
+}
+
+.icon {
+  scale: 1.5;
+}

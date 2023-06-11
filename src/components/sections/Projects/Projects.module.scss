@@ -1,91 +1,65 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
-.projects{
-    padding-bottom: $base-size*4;
-    background: $color-dark;
-    color: $color-light;
-    text-align: center;
+.projects {
+  padding-bottom: $base-size * 4;
+  background: $color-dark;
+  color: $color-light;
+  text-align: center;
 }
 
-.projectBox{
-    max-width: 800px;
-    margin: $base-size*2 auto;
-    padding: 20px;
-    background-color: $color-orange;
-    transition: 0.2s;
-    h5{
-        font-family: $font-second;
-        font-size:32px;
-        color:$color-dark;
-        margin: 0;
-    }
-    p{
-        font-family: $font-second;
-        font-size:20px;
-        font-weight: 600;
-        color:$color-dark;
-        margin: 0;
-    }
-}
+.ps {
+  p {
+    font-family: $font-second;
+    font-size: 22px;
+    font-weight: 300;
+  }
 
-.projectBox:hover{
+  .github {
+    font-family: $font-second;
+    font-size: 28px;
+    font-weight: 300;
+    color: $color-orange;
+    transition: 0.1s;
+  }
+
+  .github:hover {
+    scale: 1.1;
     cursor: pointer;
-    scale: 1.03;
+  }
 }
 
-.ps{
-    p{
-        font-family: $font-second;
-        font-size: 22px;
-        font-weight: 300;
-    }
-    
-    .github{
-        font-family: $font-second;
-        font-size: 28px;
-        font-weight: 300;
-            color:$color-orange;
-            transition: 0.1s;
-    }
-    
-    .github:hover{
-        scale: 1.1;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 768px){
-   .projectBox{
+@media (max-width: 768px) {
+  .projectBox {
     max-width: 500px;
 
-    h5{
-        font-family: $font-second;
-        font-size: $base-size * 1.2;
-        color: $color-dark;
-        margin: 0;
+    h5 {
+      font-family: $font-second;
+      font-size: $base-size * 1.2;
+      color: $color-dark;
+      margin: 0;
     }
-    p{
-        font-family: $font-second;
-        font-size: $base-size* 0.8;
-        font-weight: 600;
-        color:$color-dark;
-        margin: 0;
+    p {
+      font-family: $font-second;
+      font-size: $base-size * 0.8;
+      font-weight: 600;
+      color: $color-dark;
+      margin: 0;
     }
-   }
+  }
 
-   .ps{
-    p{
-        font-family: $font-second;
-        font-size: $base-size * 0.8;
-        font-weight: 300;
+  .ps {
+    p {
+      font-family: $font-second;
+      font-size: $base-size * 0.8;
+      font-weight: 300;
     }
-    
-    .github{
-        font-family: $font-second;
-        font-size: $base-size;
-        font-weight: 300;
-            color:$color-orange;
-            transition: 0.1s;
+
+    .github {
+      font-family: $font-second;
+      font-size: $base-size;
+      font-weight: 300;
+      color: $color-orange;
+      transition: 0.1s;
     }
-   }
+  }
 }

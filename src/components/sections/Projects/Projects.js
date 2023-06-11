@@ -1,35 +1,50 @@
-import styles from './Projects.module.scss'
-import Title from '../../features/Title/Title'
-import Container from '../../architecture/Container/Container'
+import styles from "./Projects.module.scss";
+import Title from "../../features/Title/Title";
+import Container from "../../architecture/Container/Container";
+import { useState } from "react";
+import Project from "../../features/Project/Project";
 
 export default function Projects() {
-    return(
-        <section className={styles.projects}>
-        <Container>
-        <Title adding={'my '} title={'PROJECTS'}/>
-          <div className={styles.projectList}>
-            <div className={styles.projectBox}>
-              <div className={styles.projectTitle}><h5>Waiter App</h5></div>
-              <div className={styles.projectDescription}><p>A react application that allows to make reservation of table in restaurant</p></div>
-            </div>
-            <div className={styles.projectBox}>
-              <div className={styles.projectTitle}><h5>Calculator</h5></div>
-              <div className={styles.projectDescription}><p>Basic Calculator made in vanilla javascript</p></div>
-            </div>
-            <div className={styles.projectBox}>
-              <div className={styles.projectTitle}><h5>Tic tac toe</h5></div>
-              <div className={styles.projectDescription}><p>A tic tac toe pvp game made in vanilla javascript</p></div>
-            </div>
-            <div className={styles.projectBox}>
-              <div className={styles.projectTitle}><h5>Paper rock scissors</h5></div>
-              <div className={styles.projectDescription}><p>A paper, rock, scissors game made in vanilla javascript</p></div>
-            </div>
-            <div className={styles.ps}>
-            <p>For more projects do step into my <div className={styles.github}>GitHub.</div></p>
-            </div>
-          </div>
-        </Container>
-      </section>
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      title: "Waiter App",
+      description:
+        "A react application that allows to make reservation of table in restaurant",
+    },
 
-    )
+    {
+      id: 2,
+      title: "Calculator",
+      description: "Basic Calculator made with vanilla JavaScript",
+    },
+
+    {
+      id: 3,
+      title: "Tic tac toe",
+      description: "A tic tac toe pvp game made with vanilla JavaScript",
+    },
+
+    {
+      id: 4,
+      title: "Paper rock scissors",
+      description: "A paper, rock, scissors game made in vanilla JavaScript",
+    },
+  ]);
+
+  return (
+    <section className={styles.projects}>
+      <Container>
+        <Title adding={"my "} title={"PROJECTS"} />
+
+        {projects.map((project) => (
+          <Project
+            key={project.id}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
+      </Container>
+    </section>
+  );
 }

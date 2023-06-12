@@ -11,27 +11,30 @@ export default function App() {
     }
   };
 
-    const animateFrom = {opacity:0,}
-      const animateTo = {opacity:1,}
+  const animateFrom = { opacity: 0 };
+  const animateTo = { opacity: 1 };
 
   return (
     <section>
       <div className={styles.backgroundImage}>
         <Container>
           <motion.div
-          initial={animateFrom}
-          animate={animateTo}
-          transition={{delay: 0.2}}
-          className={styles.title}>
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{ delay: 0.2 }}
+            className={styles.title}
+          >
             <h1>
               WHEN MOUNTAINS<br></br> MEETS PROGRAMMING
             </h1>
           </motion.div>
           <motion.div
-          initial={animateFrom}
-          animate={animateTo}
-          transition={{delay: 0.1}}
-          className={styles.btn} onClick={handleClickScroll}>
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{ delay: 0.1 }}
+            className={styles.btn}
+            onClick={handleClickScroll}
+          >
             About
           </motion.div>
         </Container>

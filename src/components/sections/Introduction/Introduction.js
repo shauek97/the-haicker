@@ -1,6 +1,5 @@
 import styles from "./Introduction.module.scss";
 import Container from "../../architecture/Container/Container";
-import { useEffect } from "react";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -8,10 +7,6 @@ export default function Header() {
 
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
-
-  useEffect(() => {
-    console.log("Element is in view: ", isInView)
-  }, [isInView])
 
   return (
     <>

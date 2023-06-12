@@ -59,6 +59,12 @@ export default function Skills() {
       title: "API",
       level: "learning",
     },
+
+    {
+      id: 10,
+      title: "TypeScript",
+      level: "learning",
+    },
   ]);
 
   return (
@@ -80,7 +86,7 @@ export default function Skills() {
             </div>
             <div className={styles.text}>
               <p>
-                Well, it depends, but I can say I feel pretty sure in this case.
+                Well, it depends,<br></br> but I can say I feel pretty sure in this case.
               </p>
             </div>
           </div>

@@ -33,23 +33,6 @@
   color: #0d0d0d;
 }
 
-.mountain {
-  margin: 0 10px;
-  min-width: 180px;
-}
-
-.mountainTitle {
-  font-family: $font-second;
-  font-weight: 600;
-  p {
-    margin: 6px;
-  }
-}
-
-.icon {
-  scale: 1.5;
-}
-
 @media (max-width: 768px) {
   .mountains {
     padding: $base-size * 3 0;

@@ -28,38 +28,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .projectBox {
-    max-width: 500px;
-
-    h5 {
-      font-family: $font-second;
-      font-size: $base-size * 1.2;
-      color: $color-dark;
-      margin: 0;
-    }
-    p {
-      font-family: $font-second;
-      font-size: $base-size * 0.8;
-      font-weight: 600;
-      color: $color-dark;
-      margin: 0;
-    }
-  }
-
-  .ps {
-    p {
-      font-family: $font-second;
-      font-size: $base-size * 0.8;
-      font-weight: 300;
-    }
-
-    .github {
-      font-family: $font-second;
-      font-size: $base-size;
-      font-weight: 300;
-      color: $color-orange;
-      transition: 0.1s;
-    }
-  }
-}

@@ -22,7 +22,7 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{delay:0.05}}
-        onClick={props.closeMobileMenu}>Home</motion.h2>
+        onClick={() => props.isMobile && props.closeMobileMenu()}>Home</motion.h2>
         <motion.h2 
         initial={animateFrom}
         animate={animateTo}
@@ -32,7 +32,7 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{delay:0.20}}
-        onClick={props.closeMobileMenu}>Blog</motion.h2>
+        onClick={props.closeMobileMenu()}>Blog</motion.h2>
         <motion.h2
         initial={animateFrom}
         animate={animateTo}

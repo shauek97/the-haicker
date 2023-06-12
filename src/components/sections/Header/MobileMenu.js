@@ -15,7 +15,7 @@ export default function MobileMenu() {
     <>
       <div className={styles.mobileSetting}>
         <div className={styles.mobileMenu}>
-          {open && <NavLinks closeMobileMenu={closeMobileMenu}/>}
+          {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
         </div>
         <div className={styles.hamburgerBox}>
           <div className={styles.hamburger} onClick={() => setOpen(!open)}>

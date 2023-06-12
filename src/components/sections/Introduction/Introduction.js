@@ -1,35 +1,19 @@
 import styles from "./Introduction.module.scss";
 import Container from "../../architecture/Container/Container";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 
 export default function Header() {
-
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
-
   return (
     <>
       <section id="introduction" className={styles.faceHint}>
         <Container>
           <div className={styles.mainBox}>
-
-          <span
-          style={{
-            transform: isInView ? "scale:1" : "scale:0",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-          }}>
-            <div
-            ref={ref}
-            className={styles.imageBox}>
+            <div className={styles.imageBox}>
               <img
                 src="https://i.postimg.cc/CMZ2hcfM/cvphoto.png"
                 border="0"
                 alt="cvphoto"
               />
             </div>
-          </span>  
 
             <div className={styles.descriptionBox}>
               <p>

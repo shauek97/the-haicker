@@ -27,22 +27,23 @@ export default function NavLinks(props) {
         initial={animateFrom}
         animate={animateTo}
         transition={{delay:0.10}}
-        onClick={getToAbout}>About</motion.h2>
+        onClick={() => {props.isMobile && props.closeMobileMenu(); getToAbout()}}>About</motion.h2>
         <motion.h2
         initial={animateFrom}
         animate={animateTo}
         transition={{delay:0.20}}
-        onClick={props.closeMobileMenu()}>Blog</motion.h2>
+        onClick={() => props.isMobile && props.closeMobileMenu()}>Blog</motion.h2>
         <motion.h2
         initial={animateFrom}
         animate={animateTo}
         transition={{delay:0.30}}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
         >GitHub</motion.h2>
         <motion.h2
         initial={animateFrom}
         animate={animateTo}
         transition={{delay:0.40}}
-        onClick={getToContact}>Contact
+        onClick={() => {props.isMobile && props.closeMobileMenu(); getToContact()}}>Contact
         </motion.h2>
       </>
   );

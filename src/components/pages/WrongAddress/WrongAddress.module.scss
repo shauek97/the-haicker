@@ -1,0 +1,18 @@
+@import "../../../styles/settings.scss";
+
+.title {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px dashed $color-orange;
+    display: flex;
+    flex-direction: column;
+    transition: $transition;
+    h1 {
+      padding: $base-size;
+      font-family: $font-second;
+      font-size: $base-size * 3;
+      font-weight: 300;
+      text-align: center;
+      color: $color-light;
+    }
+  }

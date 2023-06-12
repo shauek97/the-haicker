@@ -9,7 +9,7 @@ export default function Skill(props) {
 
   function randomDelay() {
     const random = Math.random();
-    const delay = random * 4;
+    const delay = random * 2.5;
     return delay;
   }
 

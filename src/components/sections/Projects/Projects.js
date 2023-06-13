@@ -46,8 +46,13 @@ export default function Projects() {
           />
         ))}
         <div className={styles.ps}>
-            <p>For more projects do step into my <Link className={styles.link} to="https://github.com/shauek97"><div className={styles.github}>GitHub.</div></Link></p>
-            </div>
+          <p>
+            For more projects do step into my{" "}
+            <Link className={styles.link} to="https://github.com/shauek97">
+              <div className={styles.github}>GitHub.</div>
+            </Link>
+          </p>
+        </div>
       </Container>
     </section>
   );

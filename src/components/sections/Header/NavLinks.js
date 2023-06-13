@@ -30,10 +30,9 @@ export default function NavLinks(props) {
 
   return (
     <>
-
-<NavLink className={styles.navLink} to="/">
+      <NavLink className={styles.navLink} to="/">
         <motion.h2
-          className={currentPathname === '/' && styles.hidden}
+          className={currentPathname === "/" && styles.hidden}
           initial={animateFrom}
           animate={animateTo}
           transition={{ delay: 0.2 }}
@@ -44,7 +43,7 @@ export default function NavLinks(props) {
       </NavLink>
 
       <motion.h2
-      className={currentPathname === '/blog' && styles.hidden}
+        className={currentPathname === "/blog" && styles.hidden}
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.05 }}
@@ -56,7 +55,7 @@ export default function NavLinks(props) {
       </motion.h2>
 
       <motion.h2
-        className={currentPathname === '/blog' && styles.hidden}
+        className={currentPathname === "/blog" && styles.hidden}
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.1 }}
@@ -69,7 +68,7 @@ export default function NavLinks(props) {
 
       <NavLink className={styles.navLink} to="/blog">
         <motion.h2
-          className={currentPathname === '/blog' && styles.hidden}
+          className={currentPathname === "/blog" && styles.hidden}
           initial={animateFrom}
           animate={animateTo}
           transition={{ delay: 0.2 }}
@@ -91,7 +90,7 @@ export default function NavLinks(props) {
       </NavLink>
 
       <motion.h2
-        className={currentPathname === '/blog' && styles.hidden}
+        className={currentPathname === "/blog" && styles.hidden}
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.4 }}

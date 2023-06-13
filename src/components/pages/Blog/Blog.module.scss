@@ -1,0 +1,26 @@
+@import "../../../styles/settings.scss";
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $color-dark;
+}
+
+.title {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px dashed $color-orange;
+  display: flex;
+  align-items: center;
+  transition: $transition;
+  h1 {
+    padding: $base-size;
+    font-family: $font-second;
+    font-size: $base-size * 3;
+    font-weight: 300;
+    text-align: center;
+    color: $color-light;
+  }
+}

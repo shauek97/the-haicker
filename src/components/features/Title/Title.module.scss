@@ -1,35 +1,35 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
-.title{
+.title {
+  margin: 0 auto;
+  max-width: 400px;
+  border-bottom: 2px dashed $color-light;
+  h4 {
+    padding-bottom: $base-size * 0.5;
+    margin: 0;
+    font-family: $font-second;
+    font-size: $base-size * 2;
+    font-weight: 400;
+  }
+  span {
+    color: $color-orange;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
     margin: 0 auto;
     max-width: 400px;
     border-bottom: 2px dashed $color-light;
-    h4{
-        padding-bottom: $base-size*0.5;
-        margin:0;
-        font-family: $font-second;
-        font-size: $base-size*2;
-        font-weight: 400;
+    h4 {
+      padding-bottom: $base-size * 0.5;
+      margin: 0;
+      font-family: $font-second;
+      font-size: $base-size * 1.5;
+      font-weight: 400;
     }
-    span{
-        color: $color-orange;
+    span {
+      color: $color-orange;
     }
-}
-
-@media (max-width: 768px){
-    .title{
-        margin: 0 auto;
-        max-width: 400px;
-        border-bottom: 2px dashed $color-light;
-        h4{
-            padding-bottom: $base-size*0.5;
-            margin:0;
-            font-family: $font-second;
-            font-size: $base-size*1.5;
-            font-weight: 400;
-        }
-        span{
-            color: $color-orange;
-        }
-    }
+  }
 }

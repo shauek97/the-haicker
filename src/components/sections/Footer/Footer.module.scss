@@ -1,12 +1,12 @@
-@import '../../../styles/settings.scss';
+@import "../../../styles/settings.scss";
 
-.footer{
-    padding: $base-size*4 0; 
-    background-color: $color-dark;
+.footer {
+  padding: $base-size * 4 0;
+  background-color: $color-dark;
 }
 
-.copyright{
-    color: $color-light;
-    font-size: $base-size;
-    opacity: 0.4;
+.copyright {
+  color: $color-light;
+  font-size: $base-size;
+  opacity: 0.4;
 }

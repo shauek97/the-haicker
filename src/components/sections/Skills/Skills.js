@@ -68,7 +68,7 @@ export default function Skills() {
   ]);
 
   return (
-    <section id='skills' className={styles.skills}>
+    <section id="skills" className={styles.skills}>
       <Container>
         <Title adding={"my "} title={"SKILLS"} />
         <div className={styles.levelLegend}>
@@ -86,7 +86,8 @@ export default function Skills() {
             </div>
             <div className={styles.text}>
               <p>
-                Well, it depends,<br></br> but I can say I feel pretty sure in this case.
+                Well, it depends,<br></br> but I can say I feel pretty sure in
+                this case.
               </p>
             </div>
           </div>

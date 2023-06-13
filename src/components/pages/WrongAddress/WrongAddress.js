@@ -1,4 +1,3 @@
-import Container from "../../architecture/Container/Container";
 import styles from "./WrongAddress.module.scss";
 import { motion } from "framer-motion";
 
@@ -7,8 +6,8 @@ export default function WrongAddress() {
   const animateTo = { opacity: 1 };
 
   return (
-    
-      <section className={styles.titleBox}>
+    <section className={styles.wrongAddress}>
+      <div className={styles.titleBox}>
         <motion.div
           initial={animateFrom}
           animate={animateTo}
@@ -19,6 +18,7 @@ export default function WrongAddress() {
             404<br></br> PAGE NOT FOUND
           </h1>
         </motion.div>
-      </section>
+      </div>
+    </section>
   );
 }

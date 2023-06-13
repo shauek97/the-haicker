@@ -18,7 +18,7 @@ export default function Blog() {
             className={styles.title}
           >
             <h1>
-              HEAVY WORK IN PROGRESS<br></br>PLEASE STAND BY
+              HEAVY WORK IN PROCESS<br></br>PLEASE STAND BY
             </h1>
           </motion.div>
         </div>

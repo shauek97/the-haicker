@@ -2,6 +2,7 @@ import styles from "./Project.module.scss";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Project(props) {
   const ref = useRef(null);
@@ -12,6 +13,7 @@ export default function Project(props) {
 
   return (
     <div ref={ref}>
+      <Link className={styles.link} to={props.url}>
       <motion.div
         initial={animateFrom}
         animate={isInView ? animateTo : animateFrom}
@@ -25,6 +27,7 @@ export default function Project(props) {
           <p>{props.description}</p>
         </div>
       </motion.div>
+      </Link>
     </div>
   );
 }

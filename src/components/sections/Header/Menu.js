@@ -9,7 +9,7 @@ export default function Menu() {
 
   return (
     <div className={styles.menu}>
-      <NavLinks open={false} isMobile={false} closeMobileMenu={closeMobileMenu}/>
+      <NavLinks isMobile={false} closeMobileMenu={closeMobileMenu}/>
     </div>
   );
 }

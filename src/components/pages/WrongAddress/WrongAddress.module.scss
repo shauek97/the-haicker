@@ -1,11 +1,17 @@
 @import "../../../styles/settings.scss";
 
+.titleBox{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
 .title {
     max-width: 800px;
     margin: 0 auto;
     border: 2px dashed $color-orange;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     transition: $transition;
     h1 {
       padding: $base-size;
@@ -13,6 +19,6 @@
       font-size: $base-size * 3;
       font-weight: 300;
       text-align: center;
-      color: $color-light;
+      color: $color-dark;
     }
   }

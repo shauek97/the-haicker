@@ -3,6 +3,7 @@ import Title from "../../features/Title/Title";
 import Container from "../../architecture/Container/Container";
 import { useState } from "react";
 import Project from "../../features/Project/Project";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   const [projects, setProjects] = useState([
@@ -44,6 +45,9 @@ export default function Projects() {
             description={project.description}
           />
         ))}
+        <div className={styles.ps}>
+            <p>For more projects do step into my <Link className={styles.link} to="https://github.com/shauek97"><div className={styles.github}>GitHub.</div></Link></p>
+            </div>
       </Container>
     </section>
   );

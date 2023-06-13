@@ -1,6 +1,6 @@
 import Blog from "./components/pages/Blog/Blog";
 import Home from "./components/pages/Home/Home";
-import WrongAddress from './components/WrongAddress/WrongAddress.js';
+import WrongAddress from './components/pages/WrongAddress/WrongAddress';
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {

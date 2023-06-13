@@ -68,7 +68,7 @@ export default function Skills() {
   ]);
 
   return (
-    <section className={styles.skills}>
+    <section id='skills' className={styles.skills}>
       <Container>
         <Title adding={"my "} title={"SKILLS"} />
         <div className={styles.levelLegend}>

@@ -8,13 +8,15 @@
   background-color: $color-dark;
 }
 
-.title {
-  max-width: 800px;
+.titleBox {
+  max-width: 500px;
   margin: 0 auto;
   border: 2px dashed $color-orange;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: $transition;
+  flex-direction: column;
   h1 {
     padding: $base-size;
     font-family: $font-second;
@@ -22,5 +24,10 @@
     font-weight: 300;
     text-align: center;
     color: $color-light;
+  }
+
+  input{
+    padding: 20px;
+    margin:10px; 
   }
 }

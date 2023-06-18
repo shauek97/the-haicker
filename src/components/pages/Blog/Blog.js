@@ -1,26 +1,19 @@
 import styles from "./Blog.module.scss";
 import Header from "../../sections/Header/Header";
-import { motion } from "framer-motion";
 
-export default function Blog() {
-  const animateFrom = { opacity: 0 };
-  const animateTo = { opacity: 1 };
+export default function Blog({dataPushHandler, formData, handleChange}) {
+
 
   return (
     <>
       <Header />
       <section className={styles.blog}>
         <div className={styles.titleBox}>
-          <motion.div
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{ delay: 0.2 }}
-            className={styles.title}
-          >
-            <h1>
-              BLOG IN PROCESS<br></br>PLEASE STAND BY
-            </h1>
-          </motion.div>
+          <form onSubmit={dataPushHandler}>
+            <input type="text" name="name" placeholder="name" value={formData.name} onChange={handleChange}></input>
+            <input type="text" name="surname" placeholder="surname" value={formData.surname} onChange={handleChange}></input>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </section>
     </>

@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100%;
   background: rgba(0, 0, 0, 0.55)
-    url(https://i.postimg.cc/1tZ778gF/main-photo.jpg);
+    url('../../../../public/media/main-photo.jpg');
   background-blend-mode: darken;
   background-size: cover;
   height: 100vh;
@@ -66,9 +66,9 @@
 
 @media (max-width: 992px) {
   .backgroundImage {
-    max-width: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.55)
-      url(https://i.postimg.cc/PJ5G8WPq/main-photo-smaller.png);
+      url('../../../../public/media/main-photo-smaller.png');
     background-blend-mode: darken;
     background-size: cover;
     height: 100vh;
@@ -93,7 +93,7 @@
   .backgroundImage {
     width: 100%;
     background: rgba(0, 0, 0, 0.55)
-      url(https://i.postimg.cc/PrqKvtQK/main-photo-smallest-2.png);
+      url('../../../../public/media/main-photo-smallest-2.png');
     background-blend-mode: darken;
     background-size: cover;
     height: 70vh;

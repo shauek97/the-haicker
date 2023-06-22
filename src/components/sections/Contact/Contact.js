@@ -60,6 +60,7 @@ export default function Contact() {
                 placeholder="Name"
                 required
               ></motion.input>
+
               <motion.input
                 initial={animateFrom}
                 animate={isInView ? animateTo : animateFrom}

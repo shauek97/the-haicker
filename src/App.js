@@ -5,13 +5,12 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 export default function App() {
-
   const [formData, setFormData] = useState({
-    name:'',
-    surname:'',
-  })
+    name: "",
+    surname: "",
+  });
 
-  console.log(formData)
+  console.log(formData);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -21,19 +20,23 @@ export default function App() {
     }));
   };
 
-  function dataPushHandler(event){
+  function dataPushHandler(event) {
+    console.log("datapush starded");
     event.preventDefault();
 
     const jsonData = JSON.stringify(formData);
 
-    fetch('db/app.json', {
-      method: 'POST',
+    fetch("http://thehaicker.com/db/app.json", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: jsonData,
-    })
+    });
+  }
 
+  function clickHandler() {
+    console.log("button clicked");
   }
 
   return (
@@ -41,7 +44,17 @@ export default function App() {
       <Routes>
         <Route path="*" element={<WrongAddress />} />
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog dataPushHandler={dataPushHandler} formData={formData} handleChange={handleChange}/>} />
+        <Route
+          path="/blog"
+          element={
+            <Blog
+              dataPushHandler={dataPushHandler}
+              formData={formData}
+              clickHandler={clickHandler}
+              handleChange={handleChange}
+            />
+          }
+        />
       </Routes>
     </>
   );

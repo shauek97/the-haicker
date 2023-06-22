@@ -13,9 +13,9 @@ export default function Header() {
           <Link to="/">
             <div className={styles.logo}>
               <img
-                src="https://i.postimg.cc/T33bVnpt/the-hicker-black.png"
+                src="../../../../public/media/the-haicker-black.png"
                 border="0"
-                alt="the-hicker-black"
+                alt="the-haicker-black"
               />
             </div>
             </Link>

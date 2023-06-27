@@ -26,7 +26,7 @@ export default function App() {
 
     const jsonData = JSON.stringify(formData);
 
-    fetch("http://thehaicker.com/db/app.json", {
+    fetch("api/blogformshit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

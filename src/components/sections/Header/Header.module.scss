@@ -11,8 +11,8 @@
 
 .menu {
   box-sizing: border-box;
-  border-right: 2px dashed #ffbd59;
-  border-left: 2px dashed #ffbd59;
+  border-right: 2px dashed $color-orange;
+  border-left: 2px dashed $color-orange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +21,11 @@
     font-family: $font-second;
     font-weight: 500;
     transition: $transition;
-    color: #0d0d0d;
+    color: $color-dark;
   }
 
   h2:hover {
-    color: #ffbd59;
+    color: $color-orange;
     cursor: pointer;
   }
 }
@@ -34,8 +34,8 @@
   height: 50px;
   img {
     box-sizing: border-box;
-    border-right: 2px dashed #ffbd59;
-    border-left: 2px dashed #ffbd59;
+    border-right: 2px dashed $color-orange;
+    border-left: 2px dashed $color-orange;
     box-sizing: border-box;
     filter: blur(0.4px);
     height: 100px;
@@ -60,7 +60,7 @@
   border-radius: 50%;
   width: $base-size;
   height: $base-size;
-  background-color: #ffbd59;
+  background-color: $color-orange;
 }
 
 .hamburgerBox {

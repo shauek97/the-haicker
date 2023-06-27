@@ -12,11 +12,7 @@ export default function Header() {
           <div className={styles.navbar}>
           <Link to="/">
             <div className={styles.logo}>
-              <img
-                src="../../../../public/media/the-haicker-black.png"
-                border="0"
-                alt="the-haicker-black"
-              />
+            <img src='https://i.postimg.cc/wBK65cC2/the-haicker-black-smaller.png' border='0' alt='the-haicker-black-smaller'/>
             </div>
             </Link>
             <Menu />

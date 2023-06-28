@@ -1,6 +1,7 @@
 import Blog from "./components/pages/Blog/Blog";
 import Home from "./components/pages/Home/Home";
 import WrongAddress from "./components/pages/WrongAddress/WrongAddress";
+import {API_URL} from './config';
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
@@ -26,7 +27,7 @@ export default function App() {
 
     const jsonData = JSON.stringify(formData);
 
-    fetch("api/blogformshit", {
+    fetch(`${API_URL}/blogformshit`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,7 +1,6 @@
 import styles from "./WelcomeSection.module.scss";
 import Container from "../../architecture/Container/Container";
-import { delay, motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function App() {
   const handleClickScroll = () => {

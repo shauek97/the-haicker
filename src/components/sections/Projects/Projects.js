@@ -9,28 +9,36 @@ export default function Projects() {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      title: "Waiter App",
+      title: "ATH CAR",
       description:
-        "A react application that allows to make reservation of table in restaurant",
-      url: 'https://github.com/shauek97/waiter-app-v3',
+        "Commercial react application made for an Uber car partner.",
+      url: 'https://github.com/shauek97/ast-cars',
     },
 
     {
       id: 2,
+      title: "Plan your gainzz",
+      description:
+        "React application which functionality allows user to create his own training plan",
+      url: 'https://github.com/shauek97/plan-your-gainz',
+    },
+
+    {
+      id: 3,
       title: "Calculator",
       description: "Basic Calculator made with vanilla JavaScript",
       url: 'https://calculator.shauek97.repl.co',
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Tic tac toe",
       description: "A tic tac toe pvp game made with vanilla JavaScript",
       url: 'https://tic-tac-toe.shauek97.repl.co',
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Paper rock scissors",
       description: "A paper, rock, scissors game made in vanilla JavaScript",
       url: 'https://github.com/shauek97/Paper.-rock-scissors',
